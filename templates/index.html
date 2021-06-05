@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Flask App</title>
+</head>
+<body>
+
+    <h1>FlASK APPLICATION</h1>
+
+
+	<form action="/search_for_keyword" method="POST" autocomplete="on">
+	    <td><input type="text" name="key" placeholder="Type Any Keyword to Search News" size="30" /></td>
+	    <td><button type="submit" >Search</button></td>
+
+    </form>
+
+
+    <h1>
+        <form action = "/count_of_article_captured_by_source" method = "POST">
+            <td><button type="submit">Count of Articles Captured by Source</button></td>
+        </form>
+    </h1>
+
+
+    <h1>
+        <form action = "/count_of_article_captured_by_source_and_date" method = "POST">
+            <td><button type="submit">Count of Articles Captured by Source And Date</button></td>
+        </form>
+    </h1>
+
+
+    <h1>
+        <form action = "/duplicity_of_feed_by_title_story_date" method = "POST">
+            <td><button type="submit">Duplicate News Based on title and Story Date</button></td>
+        </form>
+    </h1>
+
+</body>
+</html>
