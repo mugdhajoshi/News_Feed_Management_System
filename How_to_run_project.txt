@@ -1,0 +1,24 @@
+# Installing the libraries
+pymongo
+flask
+flask-pymongo
+pandas
+requests
+selenium
+pytz
+
+How to Run:
+Go to the project Folder 
+
+For Scraping and Storing in DataBase(MongoDB) Run:
+python news_scrapper.py
+
+For Flask Application Run:
+python flask_app.py
+
+For Testing:
+Go Inside tests Directory:
+Then Run:
+python test_mongo.py
+python test_scraping.py
+python test_api.py
