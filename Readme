@@ -1,0 +1,34 @@
+Objective: 
+The objective is to design and develop small working prototype of centralized newsfeed 
+system.
+
+Description: 
+Designing a simple newsfeed management system. The system should take simple 
+text file containing news sites such as follows:
+• http://in.finance.yahoo.com
+• https://www.reuters.com/places/india
+• https://timesofindia.indiatimes.com/
+
+The goal is to extract individual news by security and store these feeds as JSON files by date. 
+The JSON file should contain fields such as current_date, story_date, story_time, body, title, 
+source, story_id, … For securities we have the pickle file containing security and 
+company name that we can traverse. 
+Some fields are described here:
+security - security
+current_date - process date
+author - article author
+story_date - extract story date from article
+story_time - extract story time from article
+body - story text (cleaned text)
+title - story title
+source - newspaper (abbreviations to newspaper)
+category - news | rss | …
+topics - topics from document
+Features: 
+1. Potential parallelism to fetch feeds in parallel
+2. Checking duplicity of feed by combination of (title, story_date, …)
+3. Storing news feed into one of the document database (Redis, MongoDB, RethinkDB, etc…)
+4. How many articles per day has been received from a source
+5. Using Python | Flask developed REST on top of the results via simple flask server which allows basic queries such as
+A. How many articles captured by source on a date ?
+B. How many articles by source over date | time period ?
